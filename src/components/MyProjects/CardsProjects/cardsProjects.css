@@ -1,0 +1,36 @@
+.card {
+  border: solid 1px #ccc !important;
+  border-radius: 10px !important;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.card-body {
+  background: black;
+  border-top: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.iconsCards {
+  width: fit-content;
+  background-color: #cccccc3d;
+  border-radius: 10px;
+  padding: .5rem 0;
+}
+
+.iconsCards img {
+  margin: 0 .5rem;
+}
+
+
+
+@media (max-width: 400px) {
+  .containerCards {
+    margin: 1rem !important;
+  }
+  .card {
+    width: 20rem;
+  }
+}
