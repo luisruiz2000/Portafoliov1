@@ -6,6 +6,6 @@
 }
 
 .btnProjects:hover {
-  color: #6610f2 !important;
-  border: solid 1px #6610f2 !important;
+  color: var(--primary-color) !important;
+  border: solid 1px var(--primary-color) !important;
 }

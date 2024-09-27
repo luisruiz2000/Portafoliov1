@@ -22,10 +22,10 @@ import iconGitHub from "../../assets/icon/icon_github.png";
 import IconBotstrap from "../../assets/icon/icon_bootstrap.png";
 const MyProjects = () => {
   return (
-    <section id="projects" className="projects bgAllComponent pb-5">
+    <section id="projects" className="projects pb-5">
       <div className="text-center textProjects m-3">
-        <h2 className="titleFontFamily">Proyectos y experiencia</h2>
-        <p className="colorTitle fs-5">
+        <h2 className="colorTitle titleFontFamily">Proyectos y experiencia</h2>
+        <p className="text-white fs-5">
           ( Todo lo que puedas imaginar, lo puedes programar)
         </p>
       </div>

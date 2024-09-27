@@ -26,7 +26,7 @@ const AboutMe = () => {
   return (
     <section id="aboutMe" className="bgAllComponent">
       <div data-aos="flip-left" className="textAbout">
-        <h2 className="titleFontFamily titleAboutMe">Sobre Mí</h2>
+        <h2 className="titleFontFamily titleAboutMe colorTitle">Sobre Mí</h2>
         <article className="descriptionAboutMe">
           Soy un{" "}
           <span className="colorTitle fw-bold">desarrollador full stack </span>
@@ -41,7 +41,7 @@ const AboutMe = () => {
           . Estoy listo para contribuir a tu próximo proyecto.
         </article>
 
-        <h2 className="titleFontFamily titleAboutMe">Skills</h2>
+        <h2 className="titleFontFamily titleAboutMe colorTitle">Skills</h2>
         <div className="iconsAboutMe my-4">
           <img className="iconAboutMe" src={IconJs} width={50} />
           <img className="iconAboutMe" src={IconReact} width={50} />

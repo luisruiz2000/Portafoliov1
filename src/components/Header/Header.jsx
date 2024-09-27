@@ -7,16 +7,11 @@ const Header = () => {
     <header id="header">
       <h2 data-aos="fade-up" className="titleHeader titleFontFamily">
         <span className="m-0">
-          Soy <span className="colorTitle">Luis Fernando</span>,
+           <span className="colorTitle">Luis Fernando</span>
         </span>
         <br />
         <span className="m-0">
-          Desarrollador Full Stack
-        </span>
-        <br />
-        <span className="m-0">
-          {" "}
-          <span className="colorTitle">+2 años</span> de experiencia
+          Desarrollador <span className="colorTitle"> <br /> Full Stack</span>
         </span>
       </h2>
       <div className="containerBtn color-white">

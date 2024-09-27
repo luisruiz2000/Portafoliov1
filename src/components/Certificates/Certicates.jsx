@@ -29,8 +29,8 @@ import CertificadoEstrategiasEnglishImg from "../../assets/image/Certificados/di
 
 const Certificates = () => {
   return (
-    <div id="certificates" className="bgAllComponent">
-      <h2 className="titleFontFamily text-white">Certificados</h2>
+    <div id="certificates" className="certificates">
+      <h2 className="titleFontFamily colorTitle">Certificados</h2>
       <br />
       <div className="cards">
         <CertificateComponent

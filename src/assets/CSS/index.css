@@ -1,8 +1,10 @@
+:root {
+  --primary-color: #ffc107;
+}
+
 body {
-  padding: 0 !important;
-  margin: 0 !important;
-  background: radial-gradient(125% 149% at 50% 10%, #000 33%, #63e 100%) !important;
   font-family: Arial, Helvetica, sans-serif !important;
+  background-color: #000 !important;
 }
 
 a {
@@ -19,9 +21,6 @@ a {
 }
 
 .colorTitle {
-  color: #6610f2 !important;
+  color: var(--primary-color) !important;
 }
 
-.bgAllComponent {
-  background: radial-gradient(125% 149% at 50% 10%, #000 30%, #63e 100%);
-}

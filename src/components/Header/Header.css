@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 #header::before {
@@ -15,13 +16,12 @@
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
 
 .titleHeader {
   font-size: 3rem !important;
-  padding: 0 0 0 10rem;
   font-size: 3rem;
   position: relative;
   z-index: 2;
@@ -29,7 +29,6 @@
 }
 
 .containerBtn {
-  padding: 0 0 0 10rem;
   z-index: 6;
 }
 

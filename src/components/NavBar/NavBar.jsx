@@ -47,22 +47,22 @@ const NavBar = () => {
               <Link
                 className="nav-link"
                 activeClass="active"
-                to="certificates"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={300}>
-                Certificados
-              </Link>
-              <Link
-                className="nav-link"
-                activeClass="active"
                 to="aboutMe"
                 spy={true}
                 smooth={true}
                 offset={-50}
                 duration={300}>
                 Sobre mí
+              </Link>
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="certificates"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={300}>
+                Certificados
               </Link>
               <div className="iconsNavMovil">
                 <a
