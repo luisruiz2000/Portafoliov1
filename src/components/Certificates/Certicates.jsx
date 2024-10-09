@@ -27,6 +27,9 @@ import CertificadoBackendcsharp from "../../assets/image/Certificados/diploma-cs
 import EstrategiasEnglishImg from "../../assets/image/EstrategiasEnglishImg.jpeg";
 import CertificadoEstrategiasEnglishImg from "../../assets/image/Certificados/diploma-estrategias-ingles.pdf";
 
+import SQL from "../../assets/image/sql.jpeg"
+import CertificadoSQL from "../../assets/image/Certificados/diploma-db-sql.pdf";
+
 const Certificates = () => {
   return (
     <div id="certificates" className="certificates">
@@ -69,6 +72,14 @@ const Certificates = () => {
           cardTitle="Responsive Web Design"
           cardText="FreeCodeCamp"
           urlBtn="https://www.freecodecamp.org/certification/LuisRuiz/responsive-web-design"
+        />
+          <CertificateComponent
+          className="card"
+          img={SQL}
+          cardTitle="SQL"
+          cardText="Platzi"
+          urlBtn={CertificadoSQL}
+          onClick={() => openImage(CertificadoTerminal)}
         />
         <CertificateComponent
           className="card"
