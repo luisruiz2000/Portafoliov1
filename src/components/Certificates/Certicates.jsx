@@ -30,6 +30,13 @@ import CertificadoEstrategiasEnglishImg from "../../assets/image/Certificados/di
 import SQL from "../../assets/image/sql.jpeg"
 import CertificadoSQL from "../../assets/image/Certificados/diploma-db-sql.pdf";
 
+
+import FullStack from "../../assets/image/FullStack.jpeg"
+import CertificadoFullStackJs from "../../assets/image/Certificados/diploma-javascript-full-stack.pdf";
+
+
+
+
 const Certificates = () => {
   return (
     <div id="certificates" className="certificates">
@@ -37,6 +44,14 @@ const Certificates = () => {
       <br />
       <div className="cards">
         <CertificateComponent
+          className="card"
+          img={FullStack}
+          cardTitle="Full Stack  Developer"
+          cardText="Platzi"
+          urlBtn={CertificadoFullStackJs}
+          onClick={() => openImage(CertificadoFullStackJs)}
+        />
+          <CertificateComponent
           className="card"
           img={frontendImg}
           cardTitle="Frontend Developer"
