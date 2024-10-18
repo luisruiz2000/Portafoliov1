@@ -24,18 +24,17 @@ import Certificadofrontend from "../../assets/image/Certificados/diploma-fronten
 import csharpImg from "../../assets/image/csharpImg.jpeg";
 import CertificadoBackendcsharp from "../../assets/image/Certificados/diploma-csharp-basic.pdf";
 
-import EstrategiasEnglishImg from "../../assets/image/EstrategiasEnglishImg.jpeg";
-import CertificadoEstrategiasEnglishImg from "../../assets/image/Certificados/diploma-estrategias-ingles.pdf";
+// import EstrategiasEnglishImg from "../../assets/image/EstrategiasEnglishImg.jpeg";
+// import CertificadoEstrategiasEnglishImg from "../../assets/image/Certificados/diploma-estrategias-ingles.pdf";
 
-import SQL from "../../assets/image/sql.jpeg"
+import EstrategiasEnglishImg from "../../assets/image/EstrategiasEnglishImg.jpeg";
+import CertificadoEstrategiasEnglishImg from "../../assets/image/Certificados/diploma-ingles-a1-principiantes.pdf";
+
+import SQL from "../../assets/image/sql.jpeg";
 import CertificadoSQL from "../../assets/image/Certificados/diploma-db-sql.pdf";
 
-
-import FullStack from "../../assets/image/FullStack.jpeg"
+import FullStack from "../../assets/image/FullStack.jpeg";
 import CertificadoFullStackJs from "../../assets/image/Certificados/diploma-javascript-full-stack.pdf";
-
-
-
 
 const Certificates = () => {
   return (
@@ -51,7 +50,7 @@ const Certificates = () => {
           urlBtn={CertificadoFullStackJs}
           onClick={() => openImage(CertificadoFullStackJs)}
         />
-          <CertificateComponent
+        <CertificateComponent
           className="card"
           img={frontendImg}
           cardTitle="Frontend Developer"
@@ -88,7 +87,7 @@ const Certificates = () => {
           cardText="FreeCodeCamp"
           urlBtn="https://www.freecodecamp.org/certification/LuisRuiz/responsive-web-design"
         />
-          <CertificateComponent
+        <CertificateComponent
           className="card"
           img={SQL}
           cardTitle="SQL"
@@ -99,7 +98,7 @@ const Certificates = () => {
         <CertificateComponent
           className="card"
           img={Terminal}
-          cardTitle="Terminal Y Líneas De Comando"
+          cardTitle="Terminal y Líneas de Comando"
           cardText="Platzi"
           urlBtn={CertificadoTerminal}
           onClick={() => openImage(CertificadoTerminal)}
@@ -117,7 +116,7 @@ const Certificates = () => {
         <CertificateComponent
           className="card"
           img={BackendImg}
-          cardTitle="Introduccion Backend"
+          cardTitle="Introducción Backend"
           cardText="Platzi"
           urlBtn={CertificadoBackend}
           onClick={() => openImage(CertificadoBackend)}
@@ -141,10 +140,19 @@ const Certificates = () => {
           onClick={() => openImage(CertificadoBackendcsharp)}
         />
 
-        <CertificateComponent
+        {/* <CertificateComponent
           className="card"
           img={EstrategiasEnglishImg}
           cardTitle="Strategies to Learn English Online"
+          cardText="Platzi"
+          urlBtn={CertificadoEstrategiasEnglishImg}
+          onClick={() => openImage(CertificadoEstrategiasEnglishImg)}
+        /> */}
+
+        <CertificateComponent
+          className="card"
+          img={EstrategiasEnglishImg}
+          cardTitle="English A1 Basic"
           cardText="Platzi"
           urlBtn={CertificadoEstrategiasEnglishImg}
           onClick={() => openImage(CertificadoEstrategiasEnglishImg)}

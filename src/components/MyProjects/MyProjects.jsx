@@ -26,14 +26,14 @@ const MyProjects = () => {
       <div className="text-center textProjects m-3">
         <h2 className="colorTitle titleFontFamily">Proyectos y experiencia</h2>
         <p className="text-white fs-5">
-          ( Todo lo que puedas imaginar, lo puedes programar)
+          (Todo lo que puedas imaginar, lo puedes programar)
         </p>
       </div>
       <div className="containerCards">
         <CardProjects
           urlProjects="https://chimba.ooo/"
           title="Chimba Blockchain"
-          tiempo="(8 Meses)"
+          tiempo="(8 meses)"
           // description="Contribuí al desarrollo de Chimba BlockChain, una billetera digital. En este proyecto, antes de su migración a Angular, implementé nuevas funcionalidades, formularios avanzados, validaciones, vistas dinámicas y un diseño responsivo. Aseguré una experiencia de usuario fluida y optimizada durante mi participación en el desarrollo. "
           icons={[
             IconHtml,
@@ -51,7 +51,7 @@ const MyProjects = () => {
           data-aos="fade-right"
           urlProjects="https://landing-page-tranding.netlify.app/"
           title="Landing Page Trading"
-          tiempo="(4 Meses)"
+          tiempo="(4 meses)"
           // description="Participé en el desarrollo de una landing page como freelance. Esta página tiene opciones en inglés y español. Desarrollé formularios de login y registro, así como secciones de preguntas frecuentes y otros aspectos. La landing page resultante es completa y cumple con los objetivos esperados."
           icons={[
             IconHtml,
@@ -67,7 +67,7 @@ const MyProjects = () => {
         <CardProjects
           urlProjects="https://amatrix.netlify.app/"
           title="Amatrix"
-          tiempo="(3 Meses)"
+          tiempo="(3 meses)"
           // description="Colaboré en la maquetación de una landing page que incorporaba un video de YouTube y secciones de reseñas. Me encargué de desarrollar la estructura y el diseño siguiendo las indicaciones del cliente. El objetivo fue garantizar una experiencia de usuario fluida y optimizada, cumpliendo con los requisitos de la maquetación."
           icons={[
             IconHtml,
@@ -84,7 +84,7 @@ const MyProjects = () => {
         <CardProjects
           urlProjects="https://tickets.tablaolascarboneras.com/"
           title="Página de Reservas"
-          tiempo="(6 Meses)"
+          tiempo="(6 meses)"
           // description="Participé en el desarrollo de una página web para reservar citas para un cliente en España. Mi trabajo consistió en modificar y mejorar el diseño existente, así como en implementar nuevas funcionalidades y vistas. Aunque el proyecto estaba basado en PHP, me enfoqué principalmente en desarrollar la interfaz de usuario con HTML y CSS, además de contribuir con algunos elementos en PHP."
           icons={[IconHtml, IconCss, iconGitHub]}
           img={Carbonera}
@@ -93,7 +93,7 @@ const MyProjects = () => {
         <CardProjects
           urlProjects="https://good-weather-forecast-app.netlify.app/"
           title="Predicción Meteorológica"
-          tiempo="(2 Meses)"
+          tiempo="(2 meses)"
           // description="En esta aplicación web, se consume la API del clima para mostrar la información meteorológica de la ciudad ingresada, así como otros datos relevantes, incluidas las previsiones del clima para las próximas 6 horas."
           icons={[IconHtml, IconCss, IconJs, IconReact, IconBotstrap]}
           img={ProjectWeather}
@@ -101,7 +101,7 @@ const MyProjects = () => {
         <CardProjects
           urlProjects="https://search-pokemones.netlify.app/"
           title="Pokédex"
-          tiempo="(1 Meses)"
+          tiempo="(1 meses)"
           // description="Para esta aplicación, se utilizó una API de Pokémon para buscar información por nombre o ID. Se guardan los datos en una base de datos y se muestran al usuario al buscar un Pokémon."
           icons={[IconHtml, IconCss, IconJs, IconReact, IconBotstrap, IconSQL]}
           img={PokeDex}
