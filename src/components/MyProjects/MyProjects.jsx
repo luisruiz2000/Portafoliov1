@@ -8,6 +8,7 @@ import Amatrix from "../../assets/image/projectAmatrix.png";
 import Carbonera from "../../assets/image/carbonera.png";
 import ProjectWeather from "../../assets/image/projectWeather.png";
 import PokeDex from "../../assets/image/projectPokemon.png";
+import PasksManager from "../../assets/image/imgTasksManager.png";
 
 import IconJs from "../../assets/icon/icon_js.png";
 import IconReact from "../../assets/icon/icon_react.png";
@@ -20,6 +21,9 @@ import IconSQL from "../../assets/icon/icon_sql.png";
 import IconSass from "../../assets/icon/icon_sass.png";
 import iconGitHub from "../../assets/icon/icon_github.png";
 import IconBotstrap from "../../assets/icon/icon_bootstrap.png";
+import IconAngular from "../../assets/icon/icon_angular.png";
+import IconTypescript from "../../assets/icon/icon_typescript.png";
+
 const MyProjects = () => {
   return (
     <section id="projects" className="projects pb-5">
@@ -30,9 +34,25 @@ const MyProjects = () => {
         </p>
       </div>
       <div className="containerCards">
+
+      <CardProjects
+          urlProjects="https://tasksmanagermorxxo.netlify.app/"
+          title="Tasks Manager"
+          tiempo="(8 meses)"
+          // description="Contribuí al desarrollo de Chimba BlockChain, una billetera digital. En este proyecto, antes de su migración a Angular, implementé nuevas funcionalidades, formularios avanzados, validaciones, vistas dinámicas y un diseño responsivo. Aseguré una experiencia de usuario fluida y optimizada durante mi participación en el desarrollo. "
+          icons={[
+            IconHtml,
+            IconCss,
+            IconAngular,
+            IconTypescript,
+            iconGitHub,
+          ]}
+          img={PasksManager}
+        />
+
         <CardProjects
           urlProjects="https://chimba.ooo/"
-          title="Chimba Blockchain"
+          title="Tasks manager"
           tiempo="(8 meses)"
           // description="Contribuí al desarrollo de Chimba BlockChain, una billetera digital. En este proyecto, antes de su migración a Angular, implementé nuevas funcionalidades, formularios avanzados, validaciones, vistas dinámicas y un diseño responsivo. Aseguré una experiencia de usuario fluida y optimizada durante mi participación en el desarrollo. "
           icons={[
@@ -50,7 +70,7 @@ const MyProjects = () => {
         <CardProjects
           data-aos="fade-right"
           urlProjects="https://landing-page-tranding.netlify.app/"
-          title="Landing Page Trading"
+          title="Landing page trading"
           tiempo="(4 meses)"
           // description="Participé en el desarrollo de una landing page como freelance. Esta página tiene opciones en inglés y español. Desarrollé formularios de login y registro, así como secciones de preguntas frecuentes y otros aspectos. La landing page resultante es completa y cumple con los objetivos esperados."
           icons={[
@@ -92,7 +112,7 @@ const MyProjects = () => {
 
         <CardProjects
           urlProjects="https://good-weather-forecast-app.netlify.app/"
-          title="Predicción Meteorológica"
+          title="Predicción meteorológica"
           tiempo="(2 meses)"
           // description="En esta aplicación web, se consume la API del clima para mostrar la información meteorológica de la ciudad ingresada, así como otros datos relevantes, incluidas las previsiones del clima para las próximas 6 horas."
           icons={[IconHtml, IconCss, IconJs, IconReact, IconBotstrap]}

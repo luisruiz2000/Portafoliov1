@@ -34,3 +34,7 @@
   height: 2rem;
 }
 
+.img-obj-container{
+  object-fit: contain !important;
+}
+

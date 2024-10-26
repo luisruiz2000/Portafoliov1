@@ -1,6 +1,7 @@
 .card {
   border: solid 1px #ccc !important;
   border-radius: 10px !important;
+  width: 370px;
 }
 
 .card-img-top {

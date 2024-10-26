@@ -36,6 +36,11 @@
   width: 100%;
 }
 
+.video  {
+  width: 640px;
+  height: 360px;
+}
+
 @media (max-width: 1200px) {
   .iconsAboutMe {
     flex-wrap: wrap;
@@ -75,5 +80,13 @@
 @media(max-width: 736px) {
   .iconsAboutMe {
     display: flex;
+  }
+
+  .video{
+    width: 95%;
+  }
+
+  .iconAboutMe{
+    width: 24px;
   }
 }

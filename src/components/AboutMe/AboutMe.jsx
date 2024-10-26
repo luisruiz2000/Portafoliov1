@@ -1,7 +1,5 @@
-import React from "react";
 import "./AboutMe.css";
-
-import myAvatar from "../../assets/image/myAvatar.svg";
+import videoFile from "../../assets/image/202407180931.mp4";
 
 import IconJs from "../../assets/icon/icon_js.png";
 import IconReact from "../../assets/icon/icon_react.png";
@@ -21,6 +19,8 @@ import slqServer from "../../assets/icon/servidor-sql.png";
 import linux from "../../assets/icon/linux.png";
 import icon_ubuntu from "../../assets/icon/icon_ubuntu.png";
 import icon_csharp from "../../assets/icon/icon_csharp.png";
+import icon_typescript from "../../assets/icon/icon_typescript.png";
+import icon_java from "../../assets/icon/icon_java.png";
 
 const AboutMe = () => {
   return (
@@ -44,8 +44,10 @@ const AboutMe = () => {
         <h2 className="titleFontFamily titleAboutMe colorTitle">Skills</h2>
         <div className="iconsAboutMe my-4">
           <img className="iconAboutMe" src={IconJs} width={50} />
-          <img className="iconAboutMe" src={IconReact} width={50} />
+          <img className="iconAboutMe" src={icon_typescript} width={50} />
+          <img className="iconAboutMe bg-white rounded-2" src={icon_java} width={50} />
           <img className="iconAboutMe" src={icon_angular} width={50} />
+          <img className="iconAboutMe" src={IconReact} width={50} />
           <img className="iconAboutMe" src={IconVue} width={50} />
           <img className="iconAboutMe" src={iconGitHub} width={50} />
           <img className="iconAboutMe" src={IconHtml} width={50} />
@@ -65,7 +67,10 @@ const AboutMe = () => {
         </div>
       </div>
       <article data-aos="zoom-in-up" className="text-center">
-        {/* <img src={myAvatar} className="myAvatar" /> */}
+        <video className="video" controls>
+          <source src={videoFile} type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
       </article>
     </section>
   );
