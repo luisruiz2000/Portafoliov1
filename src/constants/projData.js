@@ -1,0 +1,98 @@
+// src/constants/projData.js
+import Chimba from "../assets/image/chimba.png";
+import Trading from "../assets/image/projectTrading.png";
+import Amatrix from "../assets/image/projectAmatrix.png";
+import Carbonera from "../assets/image/carbonera.png";
+import ProjectWeather from "../assets/image/projectWeather.png";
+import PokeDex from "../assets/image/projectPokemon.png";
+import PasksManager from "../assets/image/imgTasksManager.png";
+
+import IconJs from "../assets/icon/icon_js.png";
+import IconReact from "../assets/icon/icon_react.png";
+import IconRedux from "../assets/icon/icon_redux.png";
+import IconCss from "../assets/icon/icon_css.png";
+import IconNodejs from "../assets/icon/icon_node.png";
+import IconHtml from "../assets/icon/icon_html.png";
+import IconVue from "../assets/icon/icon_vue.png";
+import IconSQL from "../assets/icon/icon_sql.png";
+import IconSass from "../assets/icon/icon_sass.png";
+import iconGitHub from "../assets/icon/icon_github.png";
+import IconBootstrap from "../assets/icon/icon_bootstrap.png";
+import IconAngular from "../assets/icon/icon_angular.png";
+import IconTypescript from "../assets/icon/icon_typescript.png";
+
+export const projData = [
+  {
+    urlProjects: "https://tasksmanagermorxxo.netlify.app/",
+    title: "Tasks Manager",
+    tiempo: "(1 Semana)",
+    icons: [IconHtml, IconCss, IconAngular, IconTypescript, iconGitHub],
+    img: PasksManager,
+  },
+  {
+    urlProjects: "https://chimba.ooo/",
+    title: "Tasks Manager",
+    tiempo: "(8 meses)",
+    icons: [
+      IconHtml,
+      IconCss,
+      IconJs,
+      IconReact,
+      IconRedux,
+      IconSQL,
+      iconGitHub,
+    ],
+    img: Chimba,
+  },
+  {
+    urlProjects: "https://landing-page-tranding.netlify.app/",
+    title: "Landing page trading",
+    tiempo: "(4 meses)",
+    icons: [
+      IconHtml,
+      IconCss,
+      IconSass,
+      IconJs,
+      IconVue,
+      IconNodejs,
+      iconGitHub,
+    ],
+    img: Trading,
+  },
+  {
+    urlProjects: "https://amatrix.netlify.app/",
+    title: "Amatrix",
+    tiempo: "(3 meses)",
+    icons: [
+      IconHtml,
+      IconCss,
+      IconJs,
+      IconVue,
+      IconNodejs,
+      IconSass,
+      iconGitHub,
+    ],
+    img: Amatrix,
+  },
+  {
+    urlProjects: "https://tickets.tablaolascarboneras.com/",
+    title: "Página de Reservas",
+    tiempo: "(6 meses)",
+    icons: [IconHtml, IconCss, iconGitHub],
+    img: Carbonera,
+  },
+  {
+    urlProjects: "https://good-weather-forecast-app.netlify.app/",
+    title: "Predicción meteorológica",
+    tiempo: "(2 meses)",
+    icons: [IconHtml, IconCss, IconJs, IconReact, IconBootstrap],
+    img: ProjectWeather,
+  },
+  {
+    urlProjects: "https://search-pokemones.netlify.app/",
+    title: "Pokédex",
+    tiempo: "(1 mes)",
+    icons: [IconHtml, IconCss, IconJs, IconReact, IconBootstrap, IconSQL],
+    img: PokeDex,
+  },
+];

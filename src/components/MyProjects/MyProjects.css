@@ -8,8 +8,8 @@
 }
 
 .containerCards {
-  display: flex;
-  flex-direction: row !important;
+  display: flex !important;
+  flex-direction: row ;
   flex-wrap: wrap !important;
   justify-content: center;
   align-items: center;
