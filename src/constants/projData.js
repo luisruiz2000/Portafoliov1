@@ -6,6 +6,7 @@ import Carbonera from "../assets/image/carbonera.png";
 import ProjectWeather from "../assets/image/projectWeather.png";
 import PokeDex from "../assets/image/projectPokemon.png";
 import PasksManager from "../assets/image/imgTasksManager.png";
+import storeImg from "../assets/image/storeImg.png";
 
 import IconJs from "../assets/icon/icon_js.png";
 import IconReact from "../assets/icon/icon_react.png";
@@ -20,8 +21,18 @@ import iconGitHub from "../assets/icon/icon_github.png";
 import IconBootstrap from "../assets/icon/icon_bootstrap.png";
 import IconAngular from "../assets/icon/icon_angular.png";
 import IconTypescript from "../assets/icon/icon_typescript.png";
+import IconoTailwind from "../assets/icon/icono_tailwind.png";
+
+
 
 export const projData = [
+  {
+    urlProjects: "https://legendary-tartufo-116c35.netlify.app/",
+    title: "E-Commerce",
+    tiempo: "(2 mes)",
+    icons: [IconHtml, IconoTailwind, IconAngular, IconTypescript, iconGitHub],
+    img: storeImg,
+  },
   {
     urlProjects: "https://tasksmanagermorxxo.netlify.app/",
     title: "Tasks Manager",

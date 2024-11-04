@@ -21,6 +21,7 @@ import icon_ubuntu from "../../assets/icon/icon_ubuntu.png";
 import icon_csharp from "../../assets/icon/icon_csharp.png";
 import icon_typescript from "../../assets/icon/icon_typescript.png";
 import icon_java from "../../assets/icon/icon_java.png";
+import icono_tailwind from "../../assets/icon/icono_tailwind.png";
 
 const AboutMe = () => {
   return (
@@ -61,6 +62,7 @@ const AboutMe = () => {
             <img className="iconAboutMe" src={IconVue} width={50} />
             <img className="iconAboutMe" src={IconHtml} width={50} />
             <img className="iconAboutMe" src={IconCss} width={50} />
+            <img className="iconAboutMe" src={icono_tailwind} width={50} />
             <img className="iconAboutMe" src={IconBotstrap} width={50} />
             <img className="iconAboutMe" src={IconSass} width={50} />
             <img className="iconAboutMe" src={IconRedux} width={50} />
