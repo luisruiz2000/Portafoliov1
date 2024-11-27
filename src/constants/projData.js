@@ -7,6 +7,7 @@ import ProjectWeather from "../assets/image/projectWeather.png";
 import PokeDex from "../assets/image/projectPokemon.png";
 import PasksManager from "../assets/image/imgTasksManager.png";
 import storeImg from "../assets/image/storeImg.png";
+import renderingtternsInReactBase from "../assets/image/rendering-patterns-in-react-base.png";
 
 import IconJs from "../assets/icon/icon_js.png";
 import IconReact from "../assets/icon/icon_react.png";
@@ -23,9 +24,14 @@ import IconAngular from "../assets/icon/icon_angular.png";
 import IconTypescript from "../assets/icon/icon_typescript.png";
 import IconoTailwind from "../assets/icon/icono_tailwind.png";
 
-
-
 export const projData = [
+  {
+    urlProjects: "https://curious-meerkat-e262a3.netlify.app/",
+    title: "Renderizado y composición en React",
+    tiempo: "(1 mes)",
+    icons: [IconHtml, IconCss, IconReact, IconTypescript, iconGitHub],
+    img: renderingtternsInReactBase,
+  },
   {
     urlProjects: "https://legendary-tartufo-116c35.netlify.app/",
     title: "E-Commerce",
