@@ -9,10 +9,11 @@
 
 
     .card-img-top {
-      opacity: 0.7;
-      transition: opacity 0.3s linear;
+      opacity: 1;
+      transform: scale(1.05);
+      filter: brightness(0.8);
+      transition: opacity 0.3s linear, transform 0.3s linear, filter 0.3s linear;
     }
-
 
     .iconsCards img {
       transform: scale(1.2);
@@ -42,6 +43,13 @@
   margin: 0 .5rem;
 }
 
+.btns-projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
 @media (max-width: 400px) {
   .containerCards {
     margin: 1rem !important;
@@ -49,5 +57,13 @@
 
   .card {
     width: 20rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btns-projects-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
   }
 }

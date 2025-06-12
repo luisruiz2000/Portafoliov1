@@ -9,8 +9,38 @@
 
 .containerCards {
   display: flex !important;
-  flex-direction: row ;
+  flex-direction: row;
   flex-wrap: wrap !important;
   justify-content: center;
   align-items: center;
+}
+
+.section-block {
+  width: 100%;
+  padding: 2rem 0 2.5rem 0;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 #0000001a;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  font-family: var(--font-family-title, 'Montserrat', sans-serif);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.experiencia-title {
+  color: var(--primary-color, #00d8ff);
+}
+
+@media (max-width: 900px) {
+  .section-block {
+    padding: 1.2rem 0 1.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
 }

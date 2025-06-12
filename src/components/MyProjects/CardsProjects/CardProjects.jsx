@@ -8,6 +8,7 @@ const CardProjects = ({
   img,
   urlProjects,
   tiempo,
+  urlCertificado, // Nuevo prop opcional
 }) => {
   return (
     <a href={urlProjects} className="card" target="_blank">
@@ -22,7 +23,12 @@ const CardProjects = ({
             return <img key={index} src={icon} width={30} />;
           })}
         </div>
-        <BtnComponent viwUrl={urlProjects} textBtn="Ver Proyecto" />
+        <div className="btns-projects-container">
+          <BtnComponent viwUrl={urlProjects} textBtn="Ver Proyecto" />
+          {urlCertificado && (
+            <BtnComponent viwUrl={urlCertificado} textBtn="Ver Certificado" />
+          )}
+        </div>
       </div>
     </a>
   );

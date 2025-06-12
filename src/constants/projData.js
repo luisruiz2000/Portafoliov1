@@ -8,6 +8,9 @@ import PokeDex from "../assets/image/projectPokemon.png";
 import PasksManager from "../assets/image/imgTasksManager.png";
 import storeImg from "../assets/image/storeImg.png";
 import renderingtternsInReactBase from "../assets/image/rendering-patterns-in-react-base.png";
+import WS from "../assets/image/7ws.png";
+import WSCertificate from "../assets/image/WS.jpg";
+import santosblock from "../assets/image/santosblock.jpg";
 
 import IconJs from "../assets/icon/icon_js.png";
 import IconReact from "../assets/icon/icon_react.png";
@@ -25,6 +28,31 @@ import IconTypescript from "../assets/icon/icon_typescript.png";
 import IconoTailwind from "../assets/icon/icono_tailwind.png";
 
 export const projData = [
+  {
+    urlProjects: "https://www.7waysecurity.co/",
+    title: "7 Way Security",
+    tiempo: "(6 mes)",
+    icons: [IconHtml, IconCss, IconReact, IconJs, IconRedux, iconGitHub],
+    img: WS,
+    urlCertificado: WSCertificate,
+  },
+  {
+    urlProjects:
+      "https://santoblockchain.com/effortless-transactions-bitcoin-for-sending-and-receiving-money/",
+    title: "Pagina web - Billetera digital",
+    tiempo: "(+1 Año)",
+    icons: [
+      IconHtml,
+      IconCss,
+      IconJs,
+      IconReact,
+      IconRedux,
+      IconSQL,
+      iconGitHub,
+    ],
+    img: Chimba,
+    urlCertificado: santosblock,
+  },
   {
     urlProjects: "https://curious-meerkat-e262a3.netlify.app/",
     title: "Renderizado y composición en React",
@@ -45,21 +73,6 @@ export const projData = [
     tiempo: "(1 Semana)",
     icons: [IconHtml, IconCss, IconAngular, IconTypescript, iconGitHub],
     img: PasksManager,
-  },
-  {
-    urlProjects: "https://chimba.ooo/",
-    title: "Tasks Manager",
-    tiempo: "(8 meses)",
-    icons: [
-      IconHtml,
-      IconCss,
-      IconJs,
-      IconReact,
-      IconRedux,
-      IconSQL,
-      iconGitHub,
-    ],
-    img: Chimba,
   },
   {
     urlProjects: "https://landing-page-tranding.netlify.app/",

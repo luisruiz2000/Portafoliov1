@@ -23,8 +23,10 @@
 
 
     .card-img-top {
-      opacity: 0.5;
-      transition: opacity 0.3s linear;
+      opacity: 1;
+      transform: scale(1.05);
+      filter: brightness(0.8);
+      transition: opacity 0.3s linear, transform 0.3s linear, filter 0.3s linear;
     }
 
 
@@ -47,7 +49,6 @@
   height: 2rem;
 }
 
-.img-obj-container{
+.img-obj-container {
   object-fit: contain !important;
 }
-
