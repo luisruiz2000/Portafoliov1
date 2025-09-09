@@ -11,6 +11,9 @@ import renderingtternsInReactBase from "../assets/image/rendering-patterns-in-re
 import WS from "../assets/image/7ws.png";
 import WSCertificate from "../assets/image/WS.jpg";
 import santosblock from "../assets/image/santosblock.jpg";
+import imgPersonalSoft from "../assets/image/imgPersonalSoft.png";
+import certificadoPersonalSoft from "../assets/image/CertificadoPersonalSoft.jpg";
+
 
 import IconJs from "../assets/icon/icon_js.png";
 import IconReact from "../assets/icon/icon_react.png";
@@ -26,15 +29,41 @@ import IconBootstrap from "../assets/icon/icon_bootstrap.png";
 import IconAngular from "../assets/icon/icon_angular.png";
 import IconTypescript from "../assets/icon/icon_typescript.png";
 import IconoTailwind from "../assets/icon/icono_tailwind.png";
+import IconoNet from "../assets/icon/iconnet.png";
 
 export const projData = [
+  {
+    urlProjects: "https://www.personalsoft.com/co/",
+    title: "PersonalSoft",
+    tiempo: "(2 mes)",
+    icons: [
+      IconHtml,
+      IconCss,
+      IconAngular,
+      IconTypescript,
+      IconoNet,
+      iconGitHub,
+    ],
+    img: imgPersonalSoft,
+    urlCertificado: certificadoPersonalSoft,
+    type: "experiencia",
+  },
   {
     urlProjects: "https://www.7waysecurity.co/",
     title: "7 Way Security",
     tiempo: "(6 mes)",
-    icons: [IconHtml, IconCss, IconReact, IconJs, IconRedux, iconGitHub],
+    icons: [
+      IconHtml,
+      IconCss,
+      IconReact,
+      IconAngular,
+      IconJs,
+      IconRedux,
+      iconGitHub,
+    ],
     img: WS,
     urlCertificado: WSCertificate,
+    type: "experiencia",
   },
   {
     urlProjects:
@@ -52,6 +81,7 @@ export const projData = [
     ],
     img: Chimba,
     urlCertificado: santosblock,
+    type: "experiencia",
   },
   {
     urlProjects: "https://curious-meerkat-e262a3.netlify.app/",
@@ -59,6 +89,7 @@ export const projData = [
     tiempo: "(1 mes)",
     icons: [IconHtml, IconCss, IconReact, IconTypescript, iconGitHub],
     img: renderingtternsInReactBase,
+    type: "proyecto",
   },
   {
     urlProjects: "https://legendary-tartufo-116c35.netlify.app/",
@@ -66,6 +97,7 @@ export const projData = [
     tiempo: "(2 mes)",
     icons: [IconHtml, IconoTailwind, IconAngular, IconTypescript, iconGitHub],
     img: storeImg,
+    type: "proyecto",
   },
   {
     urlProjects: "https://tasksmanagermorxxo.netlify.app/",
@@ -73,6 +105,7 @@ export const projData = [
     tiempo: "(1 Semana)",
     icons: [IconHtml, IconCss, IconAngular, IconTypescript, iconGitHub],
     img: PasksManager,
+    type: "proyecto",
   },
   {
     urlProjects: "https://landing-page-tranding.netlify.app/",
@@ -88,6 +121,7 @@ export const projData = [
       iconGitHub,
     ],
     img: Trading,
+    type: "experiencia",
   },
   {
     urlProjects: "https://amatrix.netlify.app/",
@@ -103,6 +137,7 @@ export const projData = [
       iconGitHub,
     ],
     img: Amatrix,
+    type: "experiencia",
   },
   {
     urlProjects: "https://tickets.tablaolascarboneras.com/",
@@ -110,6 +145,7 @@ export const projData = [
     tiempo: "(6 meses)",
     icons: [IconHtml, IconCss, iconGitHub],
     img: Carbonera,
+    type: "experiencia",
   },
   {
     urlProjects: "https://good-weather-forecast-app.netlify.app/",
@@ -124,5 +160,6 @@ export const projData = [
     tiempo: "(1 mes)",
     icons: [IconHtml, IconCss, IconJs, IconReact, IconBootstrap, IconSQL],
     img: PokeDex,
+    type: "proyecto",
   },
 ];

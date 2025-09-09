@@ -4,21 +4,13 @@ import "./MyProjects.css";
 import CardProjects from "./CardsProjects/CardProjects";
 import { projData } from "../../constants/projData";
 
-// Filtrar los proyectos para cada sección
-const experienciaTitles = [
-  "7 Way Security",
-  "Pagina web - Billetera digital",
-  "Landing page trading",
-  "Amatrix",
-  "Página de Reservas",
-];
 
-const experiencia = projData.filter((proj) =>
-  experienciaTitles.includes(proj.title)
-);
-const proyectos = projData.filter(
-  (proj) => !experienciaTitles.includes(proj.title)
-);
+const experiencia = projData.filter(expe => expe.type === 'experiencia')
+
+const proyectos = projData.filter(proy => proy.type === 'proyecto')
+
+console.log("Experiencia:", experiencia);
+console.log("Proyectos:", proyectos);
 
 const MyProjects = () => {
   return (
