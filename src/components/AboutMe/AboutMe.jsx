@@ -30,25 +30,19 @@ const AboutMe = () => {
         <h2 className="titleFontFamily titleAboutMe colorTitle">Sobre mí</h2>
         <div className="descriptionAndVideo">
           <article className="descriptionAboutMe">
-            Soy un{" "}
-            <span className="colorTitle fw-bold">
-              desarrollador full stack{" "}
-            </span>
-            con experiencia en tecnologías como HTML, CSS, JavaScript y React.
-            Recientemente trabajé en Santos Blockchain, contribuyendo al
-            desarrollo de una billetera digital con habilidades en React y SQL.
-            Soy proactivo, con una fuerte ética de trabajo y un gran interés por
-            aprender continuamente. Actualmente estudio para ser{" "}
-            <span className="colorTitle fw-bold">
-              Técnico en programación de software en el SENA
-            </span>
-            . Estoy listo para contribuir a tu próximo proyecto.
-          </article>
-          <article data-aos="zoom-in-up" className="text-center">
-            <video className="video" controls>
-              <source src={videoFile} type="video/mp4" />
-              Tu navegador no soporta la etiqueta de video.
-            </video>
+            Soy <span className="colorTitle fw-bold">Técnico en Programación de Software </span> con 3 años de experiencia en
+            desarrollo Full Stack. He participado en proyectos que van desde
+            landing pages y sistemas de reservas hasta aplicaciones
+            empresariales con integración de APIs RESTful y bases de datos
+            relacionales. Me especializo en Angular, React y Node.js, además de
+            tener experiencia sólida en C#, .NET y SQL. A lo largo de mi
+            trayectoria he trabajado tanto en modalidad freelance como en
+            empresas de tecnología, desarrollando interfaces dinámicas,
+            optimizando aplicaciones y aplicando buenas prácticas de
+            arquitectura y diseño responsivo. Me considero una persona
+            autodidacta, proactiva y orientada a resultados, con la capacidad de
+            adaptarme rápidamente a nuevas tecnologías y aportar valor a los
+            equipos y proyectos en los que participo. 
           </article>
         </div>
 

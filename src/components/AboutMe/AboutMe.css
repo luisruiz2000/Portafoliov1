@@ -7,27 +7,30 @@
 
 }
 
+.titleAboutMe {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 .textAndVideoAbout {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  z-index: 1;
-  width: 80%;
+  align-items: center;
 }
 
-.titleAboutMe {
-  font-size: 2.5rem;
+
+.descriptionAboutMe {
+  padding: 2rem 17rem 2rem 17rem;
+  width: 100%;
+  font-size: 1.3rem;
+  margin: 1rem 0 3rem 0;
+  text-align: center;
 }
 
 .descriptionAndVideo {
   display: flex;
-  justify-content: space-between;
-}
-
-.descriptionAboutMe {
-  width: 50rem;
-  font-size: 1rem;
-  margin: 1rem 0 3rem 0;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -41,13 +44,17 @@
 
 .iconAboutMe {
   margin: 0.8rem;
-  transition: transform 0.5s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Añade transiciones suaves */
+  transition: transform 0.5s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  /* Añade transiciones suaves */
 }
 
 .iconAboutMe:hover {
-  transform: scale(1.1); /* Escala el icono al 110% */
-  opacity: 0.9; /* Reduce la opacidad */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añade sombra */
+  transform: scale(1.1);
+  /* Escala el icono al 110% */
+  opacity: 0.9;
+  /* Reduce la opacidad */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Añade sombra */
 }
 
 
@@ -55,15 +62,14 @@
   width: 100%;
 }
 
-.video {
-  width: 460px;
-  height: 200px;
-}
-
 @media (max-width: 1200px) {
   .iconsAboutMe {
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
+  }
+
+  .descriptionAboutMe{
+    padding: 2rem;
   }
 }
 
@@ -78,9 +84,6 @@
     display: none;
   } */
 
-  .descriptionAndVideo {
-    flex-wrap: wrap;
-  }
 
   .textAbout {
     width: 90%;
@@ -105,11 +108,7 @@
     display: flex;
   }
 
-  .video {
-    width: 95%;
-  }
-
-  .iconsAboutMe{
+  .iconsAboutMe {
     width: 100%;
   }
 
