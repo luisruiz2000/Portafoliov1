@@ -2,6 +2,7 @@
 
 import webResponsivo from "../assets/image/responsiWebCertificate.jpg";
 import jsAnsStructuraDatos from "../assets/image/certificateJs.jpg";
+import programadorImg from "../assets/image/programador.jpg";
 import JsUdemy from "../assets/image/Certificados/JavaScriptUdemy.jpg";
 import imgEmprendimiento from "../assets/image/CertificadoEmprendimiento.jpg";
 import CertificadoEmprendimiento from "../assets/image/Certificados/EmprendimientoSena.pdf";
@@ -14,7 +15,7 @@ import CertificateEf from "../assets/image/Certificados/diploma-entity-framework
 import BackendImg from "../assets/image/BackendImg.jpeg";
 import CertificadoBackend from "../assets/image/Certificados/diploma-backend.pdf";
 import frontendImg from "../assets/image/frontendImg.jpeg";
-import Certificadofrontend from "../assets/image/Certificados/diploma-frontend-developer-practico.pdf";
+import Certificadofrontend from "../assets/image/Certificados/diploma-frontend-developer.pdf";
 import csharpImg from "../assets/image/csharpImg.jpeg";
 import CertificadoBackendcsharp from "../assets/image/Certificados/diploma-csharp-basic.pdf";
 // import EstrategiasEnglishImg from "../assets/image/EstrategiasEnglishImg.jpeg";
@@ -27,13 +28,17 @@ import FullStack from "../assets/image/FullStack.jpeg";
 import CertificadoFullStackJs from "../assets/image/Certificados/diploma-javascript-full-stack.pdf";
 import JavaOpp from "../assets/image/javaOop.jpg";
 import CertificadoJavaOpp from "../assets/image/Certificados/diploma-java-oop.pdf";
+import JavaScriptAlgorithms from "../assets/image/Certificados/JavaScript-Algorithms-and-Data-Structures.pdf";
+import responsiWebCertificate from "../assets/image/Certificados/responsive-web-design.pdf";
+import Titulo_SENA from "../assets/image/Certificados/Titulo_SENA.jpg";
+
 
 export const certData = [
   {
-    img: FullStack,
-    cardTitle: "Full Stack Developer",
-    cardText: "Platzi",
-    urlBtn: CertificadoFullStackJs,
+    img: programadorImg,
+    cardTitle: "Programador de Software",
+    cardText: "SENA",
+    urlBtn: Titulo_SENA,
   },
   {
     img: frontendImg,
@@ -42,16 +47,23 @@ export const certData = [
     urlBtn: Certificadofrontend,
   },
   {
-    img: JsUdemy,
-    cardTitle: "JavaScript Moderno",
-    cardText: "Udemy",
-    urlBtn: "https://www.udemy.com/certificate/UC-d1c2f5d4-7b36-4b7c-aae2-b5860f654571/",
+    img: webResponsivo,
+    cardTitle: "Responsive Web Design",
+    cardText: "FreeCodeCamp",
+    urlBtn: responsiWebCertificate,
   },
   {
     img: jsAnsStructuraDatos,
     cardTitle: "JS Algorithms & Data Structures",
     cardText: "FreeCodeCamp",
-    urlBtn: "https://www.freecodecamp.org/certification/LuisRuiz/javascript-algorithms-and-data-structures",
+    urlBtn: JavaScriptAlgorithms,
+  },
+  {
+    img: JsUdemy,
+    cardTitle: "JavaScript Moderno",
+    cardText: "Udemy",
+    urlBtn:
+      "https://www.udemy.com/certificate/UC-d1c2f5d4-7b36-4b7c-aae2-b5860f654571/",
   },
   {
     img: GitGitHub,
@@ -60,34 +72,10 @@ export const certData = [
     urlBtn: CertificadoGitGitHub,
   },
   {
-    img: webResponsivo,
-    cardTitle: "Responsive Web Design",
-    cardText: "FreeCodeCamp",
-    urlBtn: "https://www.freecodecamp.org/certification/LuisRuiz/responsive-web-design",
-  },
-  {
-    img: SQL,
-    cardTitle: "SQL",
+    img: FullStack,
+    cardTitle: "Full Stack Developer",
     cardText: "Platzi",
-    urlBtn: CertificadoSQL,
-  },
-  {
-    img: JavaOpp,
-    cardTitle: "Java (OOP)",
-    cardText: "Platzi",
-    urlBtn: CertificadoJavaOpp,
-  },
-  {
-    img: Terminal,
-    cardTitle: "Terminal y Líneas de Comando",
-    cardText: "Platzi",
-    urlBtn: CertificadoTerminal,
-  },
-  {
-    img: imgEmprendimiento,
-    cardTitle: "Emprendimiento",
-    cardText: "SENA",
-    urlBtn: CertificadoEmprendimiento,
+    urlBtn: CertificadoFullStackJs,
   },
   {
     img: BackendImg,
@@ -96,16 +84,34 @@ export const certData = [
     urlBtn: CertificadoBackend,
   },
   {
+    img: csharpImg,
+    cardTitle: "C# Fundamentos",
+    cardText: "Platzi",
+    urlBtn: CertificadoBackendcsharp,
+  },
+  {
+    img: SQL,
+    cardTitle: "SQL",
+    cardText: "Platzi",
+    urlBtn: CertificadoSQL,
+  },
+  {
+    img: Terminal,
+    cardTitle: "Terminal y Líneas de Comando",
+    cardText: "Platzi",
+    urlBtn: CertificadoTerminal,
+  },
+  {
     img: Efrmaworkimg,
     cardTitle: "Fundamentos de EF",
     cardText: "Platzi",
     urlBtn: CertificateEf,
   },
   {
-    img: csharpImg,
-    cardTitle: "C# Fundamentos",
-    cardText: "Platzi",
-    urlBtn: CertificadoBackendcsharp,
+    img: imgEmprendimiento,
+    cardTitle: "Emprendimiento",
+    cardText: "SENA",
+    urlBtn: CertificadoEmprendimiento,
   },
   {
     img: EstrategiasEnglishImg,
