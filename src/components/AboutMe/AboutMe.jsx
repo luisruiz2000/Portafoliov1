@@ -47,7 +47,7 @@ const AboutMe = () => {
         </div>
 
         <h2 className="titleFontFamily titleAboutMe colorTitle">Skills</h2>
-        <div className="d-flex flex-wrap">
+        <div className="d-flex flex-wrap skillsContainer">
           <div className="iconsAboutMe">
             <img className="iconAboutMe" src={IconJs} width={50} />
             <img className="iconAboutMe" src={icon_typescript} width={50} />
