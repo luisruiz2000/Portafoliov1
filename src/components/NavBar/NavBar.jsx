@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./NavBar.css";
 import { Link } from "react-scroll";
 import IconCopy from "./IconoCopy/IconCopy";
+import { Collapse } from "bootstrap";
 
 const NavBar = () => {
+  const navbarCollapseRef = useRef(null);
+
+  const handleNavClick = () => {
+    if (navbarCollapseRef.current) {
+      const collapse = new Collapse(navbarCollapseRef.current, {
+        toggle: false
+      });
+      collapse.hide();
+    }
+  };
+
   return (
     <div className="sticky-top">
       <nav className="navbar navbar-expand-lg p-0 navContent px-5">
@@ -22,7 +34,7 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup" ref={navbarCollapseRef}>
             <div className="navbar-nav">
               <Link
                 className="nav-link"
@@ -31,7 +43,8 @@ const NavBar = () => {
                 spy={true}
                 smooth={true}
                 offset={-50}
-                duration={300}>
+                duration={300}
+                onClick={handleNavClick}>
                 Inicio
               </Link>
               <Link
@@ -41,7 +54,8 @@ const NavBar = () => {
                 spy={true}
                 smooth={true}
                 offset={-50}
-                duration={300}>
+                duration={300}
+                onClick={handleNavClick}>
                 Proyectos
               </Link>
               <Link
@@ -51,7 +65,8 @@ const NavBar = () => {
                 spy={true}
                 smooth={true}
                 offset={-50}
-                duration={300}>
+                duration={300}
+                onClick={handleNavClick}>
                 Sobre mí
               </Link>
               <Link
@@ -61,7 +76,8 @@ const NavBar = () => {
                 spy={true}
                 smooth={true}
                 offset={-50}
-                duration={300}>
+                duration={300}
+                onClick={handleNavClick}>
                 Certificados
               </Link>
               <div className="iconsNavMovil">
@@ -69,16 +85,20 @@ const NavBar = () => {
                   title="GitHub"
                   target="_blank"
                   href="https://github.com/luisruiz2000"
-                  className="bi bi-github iconNav"></a>
+                  className="bi bi-github iconNav"
+                  onClick={handleNavClick}></a>
                 <a
                   title="Linkedin"
                   target="_blank"
                   href="https://www.linkedin.com/in/luis-fernando-rengifo-ruiz-9b5290245/"
-                  className="bi bi-linkedin iconNav"></a>
-                <IconCopy
-                  classIcon="bi bi-envelope-fill iconNav"
-                  valueCopy="luisruiz462000@gmail.com"
-                />
+                  className="bi bi-linkedin iconNav"
+                  onClick={handleNavClick}></a>
+                <div onClick={handleNavClick}>
+                  <IconCopy
+                    classIcon="bi bi-envelope-fill iconNav"
+                    valueCopy="luisruiz462000@gmail.com"
+                  />
+                </div>
               </div>
             </div>
           </div>
