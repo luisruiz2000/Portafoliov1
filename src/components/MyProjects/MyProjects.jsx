@@ -9,9 +9,6 @@ const experiencia = projData.filter(expe => expe.type === 'experiencia')
 
 const proyectos = projData.filter(proy => proy.type === 'proyecto')
 
-console.log("Experiencia:", experiencia);
-console.log("Proyectos:", proyectos);
-
 const MyProjects = () => {
   return (
     <section id="projects" className="projects pb-5">
