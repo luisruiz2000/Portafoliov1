@@ -1,7 +1,6 @@
 #header {
   position: relative;
   height: 100vh;
-  background-image: url('../../assets/image/bgHeaderr.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -9,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  scroll-margin-top: 80px;
 }
 
 #header::before {
