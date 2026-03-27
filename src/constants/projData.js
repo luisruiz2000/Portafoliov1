@@ -11,7 +11,7 @@ import renderingPatternsInReactBase from "../assets/image/rendering_patterns_in_
 import weatherProject from "../assets/image/weather_p.png";
 import ws from "../assets/image/7ws.png";
 import wsCertificate from "../assets/image/ws.jpg";
-import santosBlock from "../assets/image/santosblock.jpg";
+import santosBlock from "../assets/image/santosblock.png";
 import imgPersonalSoft from "../assets/image/img_personal_soft.png";
 import certificadoPersonalSoft from "../assets/image/certificado_personal_soft.png";
 import iconJs from "../assets/icon/icon_js.png";

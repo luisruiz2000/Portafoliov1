@@ -8,11 +8,11 @@ const Header = () => {
     <header id="header" style={{ backgroundImage: `url(${bgHeader})` }}>
       <h2 data-aos="fade-up" className="titleHeader titleFontFamily">
         <span className="m-0">
-           <span className="colorTitle">Luis Fernando</span>
+           <span className="">Luis Fernando</span>
         </span>
         <br />
-        <span className="m-0">
-          Desarrollador <span className="colorTitle"> <br /> Full Stack</span>
+        <span className="m-0"> 
+          <span className="colorTitle">Software Engineer</span>
         </span>
       </h2>
       <div className="containerBtn color-white">

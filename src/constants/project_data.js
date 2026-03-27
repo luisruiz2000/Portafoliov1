@@ -11,7 +11,7 @@ import renderingtternsInReactBase from "../assets/image/rendering_patterns_in_re
 import wheaterProject from "../assets/image/weather_p.png";
 import WS from "../assets/image/7ws.png";
 import WSCertificate from "../assets/image/ws.jpg";
-import santosblock from "../assets/image/santosblock.jpg";
+import santosblock from "../assets/image/santosblock.png";
 import imgPersonalSoft from "../assets/image/img_personal_soft.png";
 import certificadoPersonalSoft from "../assets/image/certificado_personal_soft.png";
 
