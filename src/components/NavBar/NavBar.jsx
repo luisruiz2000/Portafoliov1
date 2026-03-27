@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./NavBar.css";
+import "./nav_bar.css";
 import { Link } from "react-scroll";
 import IconCopy from "./IconoCopy/IconCopy";
 import { Collapse } from "bootstrap";
@@ -56,7 +56,7 @@ const NavBar = () => {
                 offset={-50}
                 duration={300}
                 onClick={handleNavClick}>
-                Proyectos
+                Experiencia
               </Link>
               <Link
                 className="nav-link"

@@ -1,8 +1,8 @@
 // src/components/Certificates.jsx
 
 import React from 'react';
-import './Certificates.css';
-import { certData } from '../../constants/certData';
+import './certificates.css';
+import { CERT_DATA } from '../../constants/cert_data';
 import CertificateComponent from './CertificateComponent';
 
 const Certificates = () => {
@@ -11,7 +11,7 @@ const Certificates = () => {
         <h2 className="titleFontFamily colorTitle">Certificados</h2>
         <br />
         <div className="cards">
-          {certData.map((cert, index) => (
+          {CERT_DATA.map((cert, index) => (
             <div key={index}>
               <CertificateComponent 
                 img={cert.img}

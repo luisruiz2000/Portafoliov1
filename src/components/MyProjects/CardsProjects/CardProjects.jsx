@@ -1,5 +1,5 @@
 import React from "react";
-import "./cardsProjects.css";
+import "./cards_projects.css";
 import BtnComponent from "../../BtnComponent/BtnComponent";
 const CardProjects = ({
   title,

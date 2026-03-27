@@ -1,4 +1,4 @@
-import "./AboutMe.css";
+import "./about_me.css";
 import videoFile from "../../assets/image/202407180931.mp4";
 
 import IconJs from "../../assets/icon/icon_js.png";
@@ -30,19 +30,16 @@ const AboutMe = () => {
         <h2 className="titleFontFamily titleAboutMe colorTitle">Sobre mí</h2>
         <div className="descriptionAndVideo">
           <article className="descriptionAboutMe">
-            Soy <span className="colorTitle fw-bold">Técnico en Programación de Software </span> con 3 años de experiencia en
-            desarrollo Full Stack. He participado en proyectos que van desde
-            landing pages y sistemas de reservas hasta aplicaciones
-            empresariales con integración de APIs RESTful y bases de datos
-            relacionales. Me especializo en Angular, React y Node.js, además de
-            tener experiencia sólida en C#, .NET y SQL. A lo largo de mi
-            trayectoria he trabajado tanto en modalidad freelance como en
-            empresas de tecnología, desarrollando interfaces dinámicas,
-            optimizando aplicaciones y aplicando buenas prácticas de
-            arquitectura y diseño responsivo. Me considero una persona
-            autodidacta, proactiva y orientada a resultados, con la capacidad de
-            adaptarme rápidamente a nuevas tecnologías y aportar valor a los
-            equipos y proyectos en los que participo. 
+            <span className="colorTitle fw-bold">Software Engineer </span>{" "}
+            con más de 4 años de experiencia construyendo aplicaciones web
+            empresariales en sectores de seguridad, fintech y blockchain.
+            Especializado en Angular, React y Vue, con dominio de TypeScript,
+            consumo de APIs RESTful y arquitectura hexagonal. He desarrollado
+            interfaces escalables, formularios dinámicos complejos y componentes
+            reutilizables que mejoran la mantenibilidad del código. Cuento con
+            experiencia complementaria en backend con .NET, Java y Node.js, lo
+            que me permite integrarme eficazmente en equipos full stack
+            multidisciplinarios y colaborar en todas las capas del producto.
           </article>
         </div>
 

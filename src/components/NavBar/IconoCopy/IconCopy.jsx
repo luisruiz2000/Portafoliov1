@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../NavBar.css";
+import "../nav_bar.css";
 import { PulseLoader } from "react-spinners";
 const IconCopy = ({ classIcon, valueCopy }) => {
   const [textCopy, setTextCopy] = useState(false);

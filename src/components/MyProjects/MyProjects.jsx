@@ -1,13 +1,13 @@
 import React from "react";
-import "./MyProjects.css";
+import "./my_projects.css";
 
 import CardProjects from "./CardsProjects/CardProjects";
-import { projData } from "../../constants/projData";
+import { PROJECTS_DATA } from "../../constants/project_data";
 
 
-const experiencia = projData.filter(expe => expe.type === 'experiencia')
+const experiencia = PROJECTS_DATA.filter(expe => expe.type === 'experiencia')
 
-const proyectos = projData.filter(proy => proy.type === 'proyecto')
+const proyectos = PROJECTS_DATA.filter(proy => proy.type === 'proyecto')
 
 const MyProjects = () => {
   return (

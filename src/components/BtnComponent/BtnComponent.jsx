@@ -1,5 +1,5 @@
 import React from "react";
-import './BtnComponent.css'
+import './btn_component.css'
 const BtnComponent = ({ viwUrl, textBtn }) => {
   return (
     <a href={viwUrl} target="_blank" className="btn btnProjects">
