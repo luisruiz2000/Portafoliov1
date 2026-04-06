@@ -1,4 +1,4 @@
-// src/constants/certData.js
+// src/constants/cert_data.js
 
 import webResponsivo from "../assets/image/Img_cursos/responsi_web_certificate.jpg";
 import jsAnsStructuraDatos from "../assets/image/Img_cursos/img_certificado_js.jpg";

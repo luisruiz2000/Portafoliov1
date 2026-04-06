@@ -1,4 +1,4 @@
-// src/constants/projData.js
+// src/constants/project_data.js
 import Chimba from "../assets/image/Experiencias/img_santos_blockchain.png";
 import Trading from "../assets/image//Experiencias/img_landing_page_trading.png";
 import Amatrix from "../assets/image/Experiencias/img_landing_page_amatrix.png";

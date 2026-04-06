@@ -1,5 +1,3 @@
-// src/components/Certificates.jsx
-
 import React from 'react';
 import './certificates.css';
 import { CERT_DATA } from '../../constants/cert_data';
