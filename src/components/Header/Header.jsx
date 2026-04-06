@@ -12,7 +12,7 @@ const Header = () => {
         </span>
         <br />
         <span className="m-0"> 
-          <span className="colorTitle">Software Engineer</span>
+          <span className="colorTitle">Frontend Developer</span>
         </span>
       </h2>
       <div className="containerBtn color-white">
