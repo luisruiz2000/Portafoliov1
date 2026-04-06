@@ -16,7 +16,7 @@ const Header = () => {
         </span>
       </h2>
       <div className="containerBtn color-white">
-        <BtnComponent viwUrl="LuisFernandoCV.pdf" textBtn="Ver currículum" />
+        <BtnComponent viwUrl="Luis_Fernando_Rengifo_Frontend_Developer.pdf" textBtn="Ver currículum" />
       </div>
     </header>
   );
