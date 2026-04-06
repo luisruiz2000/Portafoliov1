@@ -31,6 +31,15 @@
   border-radius: 0 0 var(--radius-md) var(--radius-md);
 }
 
+.card-title {
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.card-text {
+  color: var(--text-secondary);
+}
+
 .iconsCards {
   width: fit-content;
   background-color: var(--icon-bg);
