@@ -75,7 +75,7 @@
 }
 
 .skillsContainer .iconsAboutMe:first-child {
-  flex-basis: 100%;
+  flex-basis: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

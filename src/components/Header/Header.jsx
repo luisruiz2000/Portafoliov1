@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import BtnComponent from "../BtnComponent/BtnComponent.jsx";
-import bgHeader from "../../assets/image/bg_headerr.jpg";
+import bgHeader from "../../assets/image/bg_header.jpg";
 
 const Header = () => {
   return (

@@ -1,19 +1,19 @@
 // src/constants/projData.js
-import chimba from "../assets/image/chimba.png";
-import trading from "../assets/image/project_trading.png";
-import amatrix from "../assets/image/project_amatrix.png";
-import carbonera from "../assets/image/carbonera.png";
-import projectWeather from "../assets/image/project_weather.png";
-import pokeDex from "../assets/image/project_pokemon.png";
-import tasksManager from "../assets/image/img_tasks_manager.png";
-import storeImg from "../assets/image/store_img.png";
-import renderingPatternsInReactBase from "../assets/image/rendering_patterns_in_react_base.png";
+import chimba from "../assets/image/Experiencias/img_santos_blockchain.png";
+import trading from "../assets/image/Experiencias/img_landing_page_trading.png";
+import amatrix from "../assets/image/Experiencias/img_landing_page_amatrix.png";
+import carbonera from "../assets/image/Experiencias/img_carbonera_reserva.png";
+import projectWeather from "../assets/image/Img_cursos/weather_p.png";
+import pokeDex from "../assets/image/Proyectos/proyecto_pokemon.png";
+import tasksManager from "../assets/image/Proyectos/proyecto_tasks_manager.png";
+import storeImg from "../assets/image/Proyectos/proyecto_ecommerce.png";
+import renderingPatternsInReactBase from "../assets/image/Proyectos/proyecto_react_&_ts.png";
 import weatherProject from "../assets/image/weather_p.png";
 import ws from "../assets/image/7ws.png";
-import wsCertificate from "../assets/image/ws.jpg";
-import santosBlock from "../assets/image/santosblock.png";
-import imgPersonalSoft from "../assets/image/img_personal_soft.png";
-import certificadoPersonalSoft from "../assets/image/certificado_personal_soft.png";
+import wsCertificate from "../assets/image/Certificados/laborales/certificado_7ws.jpg";
+import santosBlock from "../assets/image/Certificados/laborales/certificado _santosblackchain.pdf";
+import imgPersonalSoft from "../assets/image/Experiencias/img_personal_soft.png";
+import certificadoPersonalSoft from "../assets/image/Certificados/laborales/certificado_personal_soft.pdf";
 import iconJs from "../assets/icon/icon_js.png";
 import iconReact from "../assets/icon/icon_react.png";
 import iconRedux from "../assets/icon/icon_redux.png";
@@ -28,13 +28,12 @@ import iconBootstrap from "../assets/icon/icon_bootstrap.png";
 import iconAngular from "../assets/icon/icon_angular.png";
 import iconTypescript from "../assets/icon/icon_typescript.png";
 import iconTailwind from "../assets/icon/icono_tailwind.png";
-import iconNet from "../assets/icon/iconnet.png";
 
 export const PROJECTS_DATA = [
   {
     urlProjects: "https://www.personalsoft.com/co/",
     title: "PersonalSoft",
-    tiempo: "(2 mes)",
+    tiempo: "(6 mes)",
     icons: [iconHtml, iconCss, iconAngular, iconTypescript, iconNet, iconGitHub],
     img: imgPersonalSoft,
     urlCertificado: certificadoPersonalSoft,
@@ -52,7 +51,7 @@ export const PROJECTS_DATA = [
   {
     urlProjects: "https://santoblockchain.com/effortless-transactions-bitcoin-for-sending-and-receiving-money/",
     title: "Pagina web - Billetera digital",
-    tiempo: "(+1 Año)",
+    tiempo: "(1 Año y 6 meses)",
     icons: [iconHtml, iconCss, iconJs, iconReact, iconRedux, iconSql, iconGitHub],
     img: chimba,
     urlCertificado: santosBlock,

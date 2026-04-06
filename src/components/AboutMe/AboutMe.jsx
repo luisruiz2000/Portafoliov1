@@ -1,5 +1,5 @@
 import "./about_me.css";
-import videoFile from "../../assets/image/202407180931.mp4";
+// import videoFile from "../../assets/image/202407180931.mp4";
 
 import IconJs from "../../assets/icon/icon_js.png";
 import IconReact from "../../assets/icon/icon_react.png";
@@ -30,16 +30,8 @@ const AboutMe = () => {
         <h2 className="titleFontFamily titleAboutMe colorTitle">Sobre mí</h2>
         <div className="descriptionAndVideo">
           <article className="descriptionAboutMe">
-            <span className="colorTitle fw-bold">Software Engineer </span>{" "}
-            con más de 4 años de experiencia construyendo aplicaciones web
-            empresariales en sectores de seguridad, fintech y blockchain.
-            Especializado en Angular, React y Vue, con dominio de TypeScript,
-            consumo de APIs RESTful y arquitectura hexagonal. He desarrollado
-            interfaces escalables, formularios dinámicos complejos y componentes
-            reutilizables que mejoran la mantenibilidad del código. Cuento con
-            experiencia complementaria en backend con .NET, Java y Node.js, lo
-            que me permite integrarme eficazmente en equipos full stack
-            multidisciplinarios y colaborar en todas las capas del producto.
+            <span className="colorTitle fw-bold">Frontend Developer</span>{" "}
+             con más de 3 años de experiencia desarrollando aplicaciones web empresariales con Angular, React y Vue. He trabajado en sectores de seguridad, fintech y blockchain, construyendo interfaces escalables, consumo de APIs RESTful y flujos complejos con TypeScript. Cuento con experiencia complementaria en backend con .NET, Node.js, Java y Python, lo que me permite integrarme eficientemente en equipos full stack y arquitecturas modernas como la hexagonal.
           </article>
         </div>
 

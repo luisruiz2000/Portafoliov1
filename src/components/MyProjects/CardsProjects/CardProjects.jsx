@@ -24,7 +24,7 @@ const CardProjects = ({
           })}
         </div>
         <div className="btns-projects-container">
-          <BtnComponent viwUrl={urlProjects} textBtn="Información" />
+          <BtnComponent viwUrl={urlProjects} textBtn="Ver Proyecto" />
           {urlCertificado && (
             <BtnComponent viwUrl={urlCertificado} textBtn="Certificado" />
           )}
