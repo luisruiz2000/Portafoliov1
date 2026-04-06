@@ -2,14 +2,14 @@
   height: 100vh;
   display: flex;
   justify-content: flex-start;
-  color: #ccc;
+  color: var(--text-secondary);
   scroll-margin-top: 150px;
   padding-top: 150px;
-  margin-bottom: 6rem !important;
+  margin-bottom: var(--spacing-6xl);
 }
 
 .titleAboutMe {
-  font-size: 2.5rem;
+  font-size: var(--font-size-h2);
   text-align: center;
 }
 
@@ -19,12 +19,11 @@
   align-items: center;
 }
 
-
 .descriptionAboutMe {
-  padding: 2rem 17rem 2rem 17rem;
+  padding: var(--spacing-2xl) 17rem var(--spacing-2xl) 17rem;
   width: 100%;
-  font-size: 1.3rem;
-  margin: 0.5rem 0 1rem 0;
+  font-size: var(--font-size-body);
+  margin: var(--spacing-xs) 0 var(--spacing-md) 0;
   text-align: center;
 }
 
@@ -34,41 +33,34 @@
   align-items: center;
 }
 
-
 .iconsAboutMe {
-  background-color: #cccccc3d;
-  border-radius: 10px;
+  background-color: var(--icon-bg);
+  border-radius: var(--radius-md);
   width: fit-content;
-  padding: .8rem;
-  margin: 1rem 1rem 1rem 0;
+  padding: var(--spacing-sm);
+  margin: var(--spacing-md) var(--spacing-md) var(--spacing-md) 0;
 }
 
 .iconAboutMe {
-  margin: 0.8rem;
-  transition: transform 0.5s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-  /* Añade transiciones suaves */
+  margin: var(--spacing-sm);
+  transition: transform var(--transition-slow), opacity var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .iconAboutMe:hover {
   transform: scale(1.1);
-  /* Escala el icono al 110% */
   opacity: 0.9;
-  /* Reduce la opacidad */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  /* Añade sombra */
+  box-shadow: 0 4px 10px var(--shadow-dark);
 }
-
 
 .myAvatar {
   width: 100%;
 }
 
-/* Contenedor de skills con distribución flexible */
 .skillsContainer {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
-  gap: 2rem;
+  gap: var(--spacing-2xl);
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
@@ -86,7 +78,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 1rem 0 !important;
+  margin: var(--spacing-md) 0;
 }
 
 @media (max-width: 992px) {
@@ -107,22 +99,17 @@
     justify-content: center;
   }
 
-  .descriptionAboutMe{
-    padding: 2rem;
+  .descriptionAboutMe {
+    padding: var(--spacing-2xl);
   }
 }
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   #aboutMe {
     height: auto;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-2xl);
   }
-
-  /* .myAvatar {
-    display: none;
-  } */
-
 
   .textAbout {
     width: 90%;
@@ -138,16 +125,13 @@
   }
 
   .iconAboutMe {
-    margin-right: 1rem;
+    margin-right: var(--spacing-md);
   }
 }
 
-@media(max-width: 736px) {
+@media (max-width: 736px) {
   .iconsAboutMe {
     display: flex;
-  }
-
-  .iconsAboutMe {
     width: 100%;
   }
 

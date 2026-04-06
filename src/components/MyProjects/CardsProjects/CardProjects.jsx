@@ -12,7 +12,7 @@ const CardProjects = ({
 }) => {
   return (
     <div className="card">
-      <img src={img} className="card-img-top" alt={title} />
+      <img src={img} className="card-img-top" alt={title} loading="lazy" />
       <div className="card-body">
         <h5 className="card-title">
           {title} <span className="colorTitle">{tiempo}</span>
@@ -20,7 +20,7 @@ const CardProjects = ({
         <p className="card-text">{description}</p>
         <div className="iconsCards">
           {icons.map((icon, index) => {
-            return <img key={index} src={icon} width={30} alt="tech-icon" />;
+            return <img key={index} src={icon} width={30} alt="tech-icon" loading="lazy" />;
           })}
         </div>
         <div className="btns-projects-container">

@@ -4,13 +4,37 @@ import { Link } from "react-scroll";
 import IconCopy from "./IconoCopy/IconCopy";
 import { Collapse } from "bootstrap";
 
+// Array de datos para los links de navegación
+const NAV_LINKS = [
+  { id: "header", label: "Inicio" },
+  { id: "projects", label: "Experiencia" },
+  { id: "aboutMe", label: "Sobre mí" },
+  { id: "certificates", label: "Certificados" },
+];
+
+// Array de datos para los iconos
+const SOCIAL_LINKS = [
+  {
+    id: "github",
+    icon: "bi bi-github iconNav",
+    title: "GitHub",
+    href: "https://github.com/luisruiz2000",
+  },
+  {
+    id: "linkedin",
+    icon: "bi bi-linkedin iconNav",
+    title: "Linkedin",
+    href: "https://www.linkedin.com/in/luis-fernando-rengifo-ruiz-9b5290245/",
+  },
+];
+
 const NavBar = () => {
   const navbarCollapseRef = useRef(null);
 
   const handleNavClick = () => {
     if (navbarCollapseRef.current) {
       const collapse = new Collapse(navbarCollapseRef.current, {
-        toggle: false
+        toggle: false,
       });
       collapse.hide();
     }
@@ -34,65 +58,40 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup" ref={navbarCollapseRef}>
+          <div
+            className="collapse navbar-collapse"
+            id="navbarNavAltMarkup"
+            ref={navbarCollapseRef}>
             <div className="navbar-nav">
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="header"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={300}
-                onClick={handleNavClick}>
-                Inicio
-              </Link>
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={300}
-                onClick={handleNavClick}>
-                Experiencia
-              </Link>
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="aboutMe"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={300}
-                onClick={handleNavClick}>
-                Sobre mí
-              </Link>
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="certificates"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={300}
-                onClick={handleNavClick}>
-                Certificados
-              </Link>
+              {/* Links de navegación renderizados dinámicamente */}
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.id}
+                  className="nav-link"
+                  activeClass="active"
+                  to={link.id}
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={300}
+                  onClick={handleNavClick}>
+                  {link.label}
+                </Link>
+              ))}
+
+              {/* Iconos de redes sociales para móvil */}
               <div className="iconsNavMovil">
-                <a
-                  title="GitHub"
-                  target="_blank"
-                  href="https://github.com/luisruiz2000"
-                  className="bi bi-github iconNav"
-                  onClick={handleNavClick}></a>
-                <a
-                  title="Linkedin"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/luis-fernando-rengifo-ruiz-9b5290245/"
-                  className="bi bi-linkedin iconNav"
-                  onClick={handleNavClick}></a>
+                {SOCIAL_LINKS.map((social) => (
+                  <a
+                    key={social.id}
+                    title={social.title}
+                    target="_blank"
+                    href={social.href}
+                    className={social.icon}
+                    onClick={handleNavClick}
+                    rel="noopener noreferrer"
+                    aria-label={`Visita nuestro perfil en ${social.title}`}></a>
+                ))}
                 <div onClick={handleNavClick}>
                   <IconCopy
                     classIcon="bi bi-envelope-fill iconNav"
@@ -104,21 +103,22 @@ const NavBar = () => {
           </div>
         </div>
 
+        {/* Iconos de redes sociales para desktop */}
         <div className="iconsNavActivo">
           <IconCopy
             classIcon="bi bi-envelope-fill iconNav"
             valueCopy="luisruiz462000@gmail.com"
           />
-          <a
-            title="GitHub"
-            target="_blank"
-            href="https://github.com/luisruiz2000"
-            className="bi bi-github iconNav"></a>
-          <a
-            title="Linkedin"
-            target="_blank"
-            href="https://www.linkedin.com/in/luis-fernando-rengifo-ruiz-9b5290245/"
-            className="bi bi-linkedin iconNav"></a>
+          {SOCIAL_LINKS.map((social) => (
+            <a
+              key={social.id}
+              title={social.title}
+              target="_blank"
+              href={social.href}
+              className={social.icon}
+              rel="noopener noreferrer"
+              aria-label={`Visita nuestro perfil en ${social.title}`}></a>
+          ))}
         </div>
       </nav>
     </div>

@@ -23,6 +23,37 @@ import icon_typescript from "../../assets/icon/icon_typescript.png";
 import icon_java from "../../assets/icon/icon_java.png";
 import icono_tailwind from "../../assets/icon/icono_tailwind.png";
 
+// Skills categorized by column
+const FRONTEND_SKILLS = [
+  { id: "js", src: IconJs, label: "JavaScript", width: 50 },
+  { id: "ts", src: icon_typescript, label: "TypeScript", width: 50 },
+  { id: "angular", src: icon_angular, label: "Angular", width: 50 },
+  { id: "react", src: IconReact, label: "React", width: 50 },
+  { id: "vue", src: IconVue, label: "Vue", width: 50 },
+  { id: "html", src: IconHtml, label: "HTML", width: 50 },
+  { id: "css", src: IconCss, label: "CSS", width: 50 },
+  { id: "tailwind", src: icono_tailwind, label: "Tailwind", width: 50 },
+  { id: "bootstrap", src: IconBotstrap, label: "Bootstrap", width: 50 },
+  { id: "sass", src: IconSass, label: "Sass", width: 50 },
+  { id: "redux", src: IconRedux, label: "Redux", width: 50 },
+];
+
+const BACKEND_SKILLS = [
+  { id: "java", src: icon_java, label: "Java", width: 50, bgWhite: true },
+  { id: "nodejs", src: IconNodejs, label: "Node.js", width: 50 },
+  { id: "sql", src: IconSQL, label: "SQL", width: 50 },
+  { id: "postgres", src: iconPg, label: "PostgreSQL", width: 50 },
+  { id: "sqlserver", src: slqServer, label: "SQL Server", width: 50 },
+  { id: "csharp", src: icon_csharp, label: "C#", width: 100 },
+];
+
+const DEVOPS_SKILLS = [
+  { id: "github", src: iconGitHub, label: "GitHub", width: 50 },
+  { id: "git", src: iconGit, label: "Git", width: 50 },
+  { id: "linux", src: linux, label: "Linux", width: 50 },
+  { id: "ubuntu", src: icon_ubuntu, label: "Ubuntu", width: 50 },
+];
+
 const AboutMe = () => {
   return (
     <section id="aboutMe" className="bgAllComponent">
@@ -38,36 +69,41 @@ const AboutMe = () => {
         <h2 className="titleFontFamily titleAboutMe colorTitle">Skills</h2>
         <div className="d-flex flex-wrap skillsContainer">
           <div className="iconsAboutMe">
-            <img className="iconAboutMe" src={IconJs} width={50} />
-            <img className="iconAboutMe" src={icon_typescript} width={50} />
-            <img className="iconAboutMe" src={icon_angular} width={50} />
-            <img className="iconAboutMe" src={IconReact} width={50} />
-            <img className="iconAboutMe" src={IconVue} width={50} />
-            <img className="iconAboutMe" src={IconHtml} width={50} />
-            <img className="iconAboutMe" src={IconCss} width={50} />
-            <img className="iconAboutMe" src={icono_tailwind} width={50} />
-            <img className="iconAboutMe" src={IconBotstrap} width={50} />
-            <img className="iconAboutMe" src={IconSass} width={50} />
-            <img className="iconAboutMe" src={IconRedux} width={50} />
+            {FRONTEND_SKILLS.map((skill) => (
+              <img
+                key={skill.id}
+                className="iconAboutMe"
+                src={skill.src}
+                width={skill.width}
+                loading="lazy"
+                alt={skill.label}
+              />
+            ))}
             {/* <span className="fw-bold">Y voy por más...</span> */}
           </div>
           <div className="iconsAboutMe">
-            <img
-              className="iconAboutMe bg-white rounded-2"
-              src={icon_java}
-              width={50}
-            />
-            <img className="iconAboutMe" src={IconNodejs} width={50} />
-            <img className="iconAboutMe" src={IconSQL} width={50} />
-            <img className="iconAboutMe" src={iconPg} width={50} />
-            <img className="iconAboutMe" src={slqServer} width={50} />
-            <img className="iconAboutMe" src={icon_csharp} width={100} />
+            {BACKEND_SKILLS.map((skill) => (
+              <img
+                key={skill.id}
+                className={`iconAboutMe ${skill.bgWhite ? "bg-white rounded-2" : ""}`}
+                src={skill.src}
+                width={skill.width}
+                loading="lazy"
+                alt={skill.label}
+              />
+            ))}
           </div>
           <div className="iconsAboutMe">
-            <img className="iconAboutMe" src={iconGitHub} width={50} />
-            <img className="iconAboutMe" src={iconGit} width={50} />
-            <img className="iconAboutMe" src={linux} width={50} />
-            <img className="iconAboutMe" src={icon_ubuntu} width={50} />
+            {DEVOPS_SKILLS.map((skill) => (
+              <img
+                key={skill.id}
+                className="iconAboutMe"
+                src={skill.src}
+                width={skill.width}
+                loading="lazy"
+                alt={skill.label}
+              />
+            ))}
           </div>
         </div>
       </div>

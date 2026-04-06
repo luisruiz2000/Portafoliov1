@@ -1,10 +1,73 @@
 :root {
+  /* Colors */
   --primary-color: #ffc107;
+  --bg-dark: #000;
+  --text-light: #fff;
+  --text-secondary: #ccc;
+  --text-muted: #666464;
+  --border-color: #5f5f5f;
+  --border-light: #ccc;
+  --icon-bg: #cccccc3d;
+  --overlay-dark: rgba(0, 0, 0, 0.8);
+  --overlay-dark-87: rgba(0, 0, 0, 0.87);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+  --shadow-card: 0 2px 16px 0 #0000001a;
+  --bg-dark-222: #222;
+
+  /* Fonts */
+  --font-family-primary: Arial, Helvetica, sans-serif;
+  --font-family-title: "Anton SC", sans-serif;
+  --font-family-logo: "Jaro", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 900;
+  
+  /* Font Sizes */
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2.1rem;
+  --font-size-body: 1.3rem;
+  --font-size-sm: 0.9rem;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.2rem;
+  --spacing-xl: 1.5rem;
+  --spacing-2xl: 2rem;
+  --spacing-3xl: 3rem;
+  --spacing-6xl: 6rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease-out;
+  --transition-normal: 0.3s ease-out;
+  --transition-slow: 0.5s ease;
+  --transition-color: color 0.5s ease-out;
+  
+  /* Breakpoints (mobile-first approach) */
+  --bp-sm: 500px;
+  --bp-md: 736px;
+  --bp-lg: 769px;
+  --bp-xl: 900px;
+  --bp-2xl: 992px;
+  --bp-3xl: 1200px;
+  
+  /* Z-index */
+  --z-base: 1;
+  --z-overlay: 2;
+  --z-sticky: 6;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif !important;
-  background-color: #000 !important;
+  font-family: var(--font-family-primary) !important;
+  background-color: var(--bg-dark) !important;
+  color: var(--text-light) !important;
 }
 
 a {
@@ -14,10 +77,10 @@ a {
 
 .titleFontFamily {
   text-transform: uppercase !important;
-  color: #FFF;
-  font-family: "Anton SC", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  color: var(--text-light) !important;
+  font-family: var(--font-family-title) !important;
+  font-weight: var(--font-weight-normal) !important;
+  font-style: normal !important;
 }
 
 .colorTitle {

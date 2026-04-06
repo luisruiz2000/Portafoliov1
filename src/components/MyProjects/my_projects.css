@@ -1,5 +1,5 @@
 .projects {
-  padding-top: 3rem;
+  padding-top: var(--spacing-3xl);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,31 +8,31 @@
 }
 
 .containerCards {
-  display: flex !important;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap !important;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .section-block {
   width: 100%;
-  padding: 2rem 0 2.5rem 0;
-  border-radius: 18px;
-  box-shadow: 0 2px 16px 0 #0000001a;
+  padding: var(--spacing-2xl) 0 calc(var(--spacing-2xl) + 0.5rem) 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
 }
 
 .section-title {
-  font-size: 2.1rem;
+  font-size: var(--font-size-h3);
   font-family: var(--font-family-title, 'Montserrat', sans-serif);
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xl);
   letter-spacing: 1px;
   text-align: center;
 }
 
 .experiencia-title {
-  color: var(--primary-color, #00d8ff);
+  color: var(--primary-color);
 }
 
 @media (max-width: 900px) {

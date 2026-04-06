@@ -27,6 +27,9 @@ const IconCopy = ({ classIcon, valueCopy }) => {
       target="_blank"
       onClick={handleCopy}
       className={classIcon}
+      title="Copiar correo electrónico"
+      role="button"
+      tabIndex="0"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}>
       {hoverIcon && (

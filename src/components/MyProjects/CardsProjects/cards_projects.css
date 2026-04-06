@@ -1,57 +1,57 @@
 .card {
-  border-radius: 10px !important;
+  border-radius: var(--radius-md);
   width: 370px;
-  border: solid 1px #5f5f5f !important;
-  transition: all linear 0.5s;
+  border: solid 1px var(--border-color);
+  transition: all linear var(--transition-slow);
 }
 
 .card:hover {
-  border: solid 1px var(--primary-color) !important;
+  border: solid 1px var(--primary-color);
 }
 
 .card:hover .card-img-top {
   opacity: 1;
   transform: scale(1.05);
   filter: brightness(0.8);
-  transition: opacity 0.3s linear, transform 0.3s linear, filter 0.3s linear;
+  transition: opacity var(--transition-normal), transform var(--transition-normal), filter var(--transition-normal);
 }
 
 .card:hover .iconsCards img {
   transform: scale(1.2);
-  transition: transform 0.3s linear;
+  transition: transform var(--transition-normal);
 }
 
 .card-img-top {
-  border-radius: 10px 10px 0 0 !important;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
 .card-body {
-  border-top: solid 1px #ccc;
-  background: black;
-  border-radius: 0 0 10px 10px;
+  border-top: solid 1px var(--border-light);
+  background: var(--bg-dark);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
 }
 
 .iconsCards {
   width: fit-content;
-  background-color: #cccccc3d;
-  border-radius: 10px;
-  padding: .5rem 0;
+  background-color: var(--icon-bg);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xs) 0;
 }
 
 .iconsCards img {
-  margin: 0 .5rem;
+  margin: 0 var(--spacing-xs);
 }
 
 .btns-projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  margin-top: 1.2rem;
+  margin-top: var(--spacing-lg);
 }
 
 @media (max-width: 400px) {
   .containerCards {
-    margin: 1rem !important;
+    margin: var(--spacing-md);
   }
 
   .card {
